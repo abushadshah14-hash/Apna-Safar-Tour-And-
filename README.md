@@ -1,92 +1,35 @@
-# Apna-Safar-Tour-And-<!DOCTYPE html>
-<html>
-<head>
-<title>Apna Safar Tour and Travels</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body { font-family: Arial; text-align: center; background: #000; color: gold; padding: 20px; }
-button { padding: 12px; margin: 10px; width: 90%; font-size: 16px; }
-input, select { padding: 10px; margin: 5px; width: 90%; }
-</style>
-</head>
-<body>
+# Apna Safar Tour and Travels
 
-<h2>Apna Safar Tour and Travels</h2>
-<p>Local ₹15/km | Outstation ₹30/km</p>
-<p>📞 9168031664</p>
+## Overview
+Apna Safar is a comprehensive solution for managing tours and travels. The application consists of several components:
 
-<h3>Book Your Ride</h3>
+- **Customer App:** A user-friendly interface for customers to book tours, manage bookings, and access travel information.
+- **Driver App:** An application for drivers to receive ride requests, navigate to pick-up and drop-off locations, and manage their schedules.
+- **Partner App:** A platform for partners to collaborate with the business, manage tour packages, and track customer engagements.
+- **Backend API:** The server-side components that handle requests, manage data, and facilitate communication between the apps and the database.
+- **Database Schema:** The design of the database that stores all relevant data, including users, bookings, tours, and more.
 
-<input type="text" id="name" placeholder="Your Name"><br>
-<input type="number" id="mobile" placeholder="Mobile Number"><br>
-<input type="number" id="distance" placeholder="Distance (KM)"><br>
+## Getting Started
+To get started with the Apna Safar application, follow the setup instructions in the respective components mentioned above.
 
-<select id="type">
-<option value="15">Local</option>
-<option value="30">Outstation</option>
-</select><br>
+## Features
+- User authentication
+- Tour management
+- Real-time driver tracking
+- Booking management
+- Notifications and messaging
 
-<button onclick="calculateFare()">Calculate Fare</button>
+## Installation
+Follow the instructions for each component to install and run the application.
+- For Customer App: [Installation Guide Link]
+- For Driver App: [Installation Guide Link]
+- For Partner App: [Installation Guide Link]
 
-<h3 id="result"></h3>
+## API Documentation
+Refer to the API documentation for details on endpoints and data structures used in the Backend API.
 
-<a href="tel:9168031664"><button>Call Now</button></a>
-<a href="https://wa.me/919168031664"><button>Book on WhatsApp</button></a>
+## Database Schema
+Include a diagram or detailed description of the database schema here.
 
-<script>
-let bookingId = 1000;
-
-function calculateFare() {
-  let distance = document.getElementById("distance").value;
-  let rate = document.getElementById("type").value;
-  let fare = distance * rate;
-  bookingId++;
-  document.getElementById("result").innerHTML =
-    "Booking ID: ASF" + bookingId + "<br>Total Fare: ₹" + fare;
-}
-</script>
-
-</body>
-</html><?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:text="Apna Safar Tour and Travels"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="Maharashtra, Mumbai, Bhiwandi\nDeewan Shah Dargah Road, Golden Hotel"
-        android:layout_marginBottom="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="Services:\n• Local Taxi\n• Intercity\n• All India\n• Airport Pickup/Drop\n• Rental"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/callBtn"
-        android:text="Call Now"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/whatsappBtn"
-        android:text="Book on WhatsApp"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+## Conclusion
+Apna Safar is designed to streamline the travel experience for customers, drivers, and partners alike. Explore the various functionalities and enjoy enhanced travel management!
